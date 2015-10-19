@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8' />
+<link href='assets/css/fullcalendar.css' rel='stylesheet' />
+<link href='assets/css/fullcalendar.print.css' rel='stylesheet' media='print' />
+<script src='assets/lib/moment.min.js'></script>
+<script src='assets/lib/jquery.min.js'></script>
+<script src='assets/js/fullcalendar.min.js'></script>
+
+      <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Include roboto.css to use the Roboto web font, material.css to include the theme and ripples.css to style the ripple effect -->
+        <link href="assets/css/roboto.min.css" rel="stylesheet">
+        <link href="assets/css/material.min.css" rel="stylesheet">
+        <link href="assets/css/ripples.min.css" rel="stylesheet">
+    
+    
+<script>
+
+	$(document).ready(function() {
+
+		$('#calendar').fullCalendar({
+			defaultDate: '2015-10-12',
+			editable: true,
+			eventLimit: true, // allow "more" link when too many events
+			events: [
+				{
+					title: 'All Day Event',
+					start: '2015-10-01'
+				},
+				{
+					title: 'Long Event',
+					start: '2015-10-07',
+					end: '2015-10-10'
+				},
+				{
+					id: 999,
+					title: 'Repeating Event',
+					start: '2015-10-09T16:00:00'
+				},
+				{
+					id: 999,
+					title: 'Repeating Event',
+					start: '2015-10-16T16:00:00'
+				},
+				{
+					title: 'Conference',
+					start: '2015-10-11',
+					end: '2015-10-13'
+				},
+				{
+					title: 'Meeting',
+					start: '2015-10-19T10:30:00',
+					end: '2015-10-12T19:30:00'
+				},
+				{
+					title: 'Lunch',
+					start: '2015-10-19T12:00:00'
+				},
+				{
+					title: 'Meeting',
+					start: '2015-10-19T14:30:00'
+				},
+				{
+					title: 'Happy Hour',
+					start: '2015-10-19T17:30:00'
+				},
+				{
+					title: 'Dinner',
+					start: '2015-10-19T20:00:00'
+				},
+				{
+					title: 'Birthday Party',
+					start: '2015-10-13T07:00:00'
+				},
+				{
+					title: 'Click for Google',
+					url: 'http://google.com/',
+					start: '2015-10-28'
+				}
+			]
+		});
+		
+	});
+
+</script>
+<style>
+
+    body{
+        background-color: #EDEBEE;
+    }
+h2{color: #A6A4A7 !important;
+margin-bottom: 50px !important; }
+	#calendar {
+		max-width: 900px;
+		margin: 0 auto;
+        margin-top: 100px;
+        margin-bottom: 100px;
+       
+	}
+    table{
+        
+        background-color: #fff;
+    }
+td.fc-day-number {
+    font-size: 3.2em;
+    color: #ECEAED;
+    }
+
+    td.fc-today {
+    font-size: 3.2em !important;
+    color: #F58960 !important;
+}
+
+a.fc-day-grid-event.fc-h-event.fc-event.fc-start.fc-end.fc-draggable.fc-resizable {
+    background-color: #6AD4E7;
+    border: 2px solid;
+    height: 149px;
+}
+a.fc-day-grid-event.fc-h-event.fc-event.fc-start.fc-end.fc-draggable {
+    background-color: #8CD18D;
+    border: 2px solid;
+    height: 20px;
+}
+
+
+</style>
+</head>
+<body>
+
+	<div id='calendar'></div>
+
+    
+        <script src="assets/js/bootstrap.min.js"></script>
+
+        <script src="assets/js/ripples.min.js"></script>
+        <script src="assets/js/material.min.js"></script>
+        <script>
+            $(document).ready(function() {
+                // This command is used to initialize some elements and make them work properly
+                $.material.init();
+            });
+        </script>
+
+    
+</body>
+</html>
